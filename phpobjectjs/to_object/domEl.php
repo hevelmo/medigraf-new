@@ -6,6 +6,9 @@ function domEl() {
         'body_recurrent' => 'body.top-header',
         // TOP BUTTON
         'top_button' => '#top-trigger',
+        // SLICKNAV
+        'div_recurrent_slick_nav' => '#content-slick-nav',
+        'div_recurrent_role_menu' => '#content-role-menu',
     	//GENERAL HI DIVS
     	'div_hidden_inputs_session' => 'div#hidden-inputs-session',
     	'div_hidden_inputs_temporal' => 'div#hidden-inputs-temporal',

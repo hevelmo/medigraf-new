@@ -20,6 +20,8 @@ Finch.route('/', {
         matchMediaMethods.gumbyInit();
         matchMediaMethods.contentScrollarea();
         animatedMethods.animated();
+        slicknavMethods.add_slick_nav();
+        slicknavMethods.header_fixed();
     },
     unload: function(bindings) {
         MED.setHTML(domEl.div_recurrent_main_nav, '');
@@ -41,6 +43,8 @@ Finch.route('/contacto', {
         matchMediaMethods.contentScrollarea();
         animatedMethods.animated();
         matchMediaMethods.gumbyInit();
+        slicknavMethods.add_slick_nav();
+        slicknavMethods.header_fixed();
     },
     unload: function(bindings) {
         MED.setHTML(domEl.div_recurrent_main_nav, '');
@@ -57,9 +61,12 @@ Finch.route('/aviso-de-privacidad', {
         MED.loadTemplate(tempsNames.temp_site_nav, domEl.div_recurrent_main_nav);
         MED.loadTemplate(tempsNames.temp_content_privacy_notice, domEl.div_recurrent);
 
+        siteNavMethod.slickNav();
         matchMediaMethods.contentScrollarea();
         animatedMethods.animated();
         matchMediaMethods.gumbyInit();
+        slicknavMethods.add_slick_nav();
+        slicknavMethods.header_fixed();
     },
     unload: function(bindings) {
         MED.setHTML(domEl.div_recurrent_main_nav, '');
@@ -76,9 +83,12 @@ Finch.route('/aviso-legal', {
         MED.loadTemplate(tempsNames.temp_site_nav, domEl.div_recurrent_main_nav);
         MED.loadTemplate(tempsNames.temp_content_legal_notice, domEl.div_recurrent);
 
+        siteNavMethod.slickNav();
         matchMediaMethods.contentScrollarea();
         animatedMethods.animated();
         matchMediaMethods.gumbyInit();
+        slicknavMethods.add_slick_nav();
+        slicknavMethods.header_fixed();
     },
     unload: function(bindings) {
         MED.setHTML(domEl.div_recurrent_main_nav, '');
@@ -98,10 +108,13 @@ Finch.route('/proyectos', {
         MED.loadTemplate(tempsNames.temp_section_filters_by_projects, domEl.div_recurrent_filters);
         MED.loadTemplate(tempsNames.temp_section_grid_filter_projects, domEl.div_recurrent_grid_filter_projects);
 
+        siteNavMethod.slickNav();
         matchMediaMethods.contentScrollarea();
         filtersMethods.changeFilters();
         animatedMethods.animated();
         matchMediaMethods.gumbyInit();
+        slicknavMethods.add_slick_nav();
+        slicknavMethods.header_fixed();
     },
     unload: function(bindings) {
         MED.setHTML(domEl.div_recurrent_main_nav, '');
@@ -119,9 +132,12 @@ Finch.route('/fussion-jeans', {
 
         MED.loadTemplate(tempsNames.temp_content_project_fussion_jeans, domEl.div_recurrent);
 
+        siteNavMethod.slickNav();
         matchMediaMethods.contentScrollarea();
         animatedMethods.animated();
         matchMediaMethods.gumbyInit();
+        slicknavMethods.add_slick_nav();
+        slicknavMethods.header_fixed();
     },
     unload: function(bindings) {
         MED.setHTML(domEl.div_recurrent_main_nav, '');
@@ -139,9 +155,12 @@ Finch.route('/ford-cavsa', {
 
         MED.loadTemplate(tempsNames.temp_content_project_ford_cavsa, domEl.div_recurrent);
 
+        siteNavMethod.slickNav();
         matchMediaMethods.contentScrollarea();
         animatedMethods.animated();
         matchMediaMethods.gumbyInit();
+        slicknavMethods.add_slick_nav();
+        slicknavMethods.header_fixed();
     },
     unload: function(bindings) {
         MED.setHTML(domEl.div_recurrent_main_nav, '');
@@ -159,9 +178,12 @@ Finch.route('/okuma-sushi', {
 
         MED.loadTemplate(tempsNames.temp_content_project_okuma_sushi, domEl.div_recurrent);
 
+        siteNavMethod.slickNav();
         matchMediaMethods.contentScrollarea();
         animatedMethods.animated();
         matchMediaMethods.gumbyInit();
+        slicknavMethods.add_slick_nav();
+        slicknavMethods.header_fixed();
     },
     unload: function(bindings) {
         MED.setHTML(domEl.div_recurrent_main_nav, '');
@@ -179,9 +201,12 @@ Finch.route('/jovy-candy', {
 
         MED.loadTemplate(tempsNames.temp_content_project_jovy_candy, domEl.div_recurrent);
 
+        siteNavMethod.slickNav();
         matchMediaMethods.contentScrollarea();
         animatedMethods.animated();
         matchMediaMethods.gumbyInit();
+        slicknavMethods.add_slick_nav();
+        slicknavMethods.header_fixed();
     },
     unload: function(bindings) {
         MED.setHTML(domEl.div_recurrent_main_nav, '');
@@ -200,9 +225,12 @@ Finch.route('/blog', {
         MED.loadTemplate(tempsNames.temp_content_blog, domEl.div_recurrent);
         MED.loadTemplate(tempsNames.temp_content_notes, domEl.div_recurrent_blog);
 
+        siteNavMethod.slickNav();
         matchMediaMethods.contentScrollarea();
         animatedMethods.animated();
         matchMediaMethods.gumbyInit();
+        slicknavMethods.add_slick_nav();
+        slicknavMethods.header_fixed();
     },
     unload: function(bindings) {
         MED.setHTML(domEl.div_recurrent_main_nav, '');
@@ -219,9 +247,12 @@ Finch.route('/posicionamiento-web', {
         MED.loadTemplate(tempsNames.temp_site_nav, domEl.div_recurrent_main_nav);
         MED.loadTemplate(tempsNames.temp_content_blog_posicionamiento_web, domEl.div_recurrent);
 
+        siteNavMethod.slickNav();
         matchMediaMethods.contentScrollarea();
         animatedMethods.animated();
         matchMediaMethods.gumbyInit();
+        slicknavMethods.add_slick_nav();
+        slicknavMethods.header_fixed();
     },
     unload: function(bindings) {
         MED.setHTML(domEl.div_recdiv_recurrent_main_navurren, '');
@@ -237,9 +268,12 @@ Finch.route('/fotografia', {
         MED.loadTemplate(tempsNames.temp_site_nav, domEl.div_recurrent_main_nav);
         MED.loadTemplate(tempsNames.temp_content_blog_fotografia, domEl.div_recurrent);
 
+        siteNavMethod.slickNav();
         matchMediaMethods.contentScrollarea();
         animatedMethods.animated();
         matchMediaMethods.gumbyInit();
+        slicknavMethods.add_slick_nav();
+        slicknavMethods.header_fixed();
     },
     unload: function(bindings) {
         MED.setHTML(domEl.div_recdiv_recurrent_main_navurren, '');
@@ -255,9 +289,12 @@ Finch.route('/identidad-de-marca', {
         MED.loadTemplate(tempsNames.temp_site_nav, domEl.div_recurrent_main_nav);
         MED.loadTemplate(tempsNames.temp_content_blog_identidad_de_marca, domEl.div_recurrent);
 
+        siteNavMethod.slickNav();
         matchMediaMethods.contentScrollarea();
         animatedMethods.animated();
         matchMediaMethods.gumbyInit();
+        slicknavMethods.add_slick_nav();
+        slicknavMethods.header_fixed();
     },
     unload: function(bindings) {
         MED.setHTML(domEl.div_recdiv_recurrent_main_navurren, '');
@@ -273,9 +310,12 @@ Finch.route('/ads-google-bing-yahoo', {
         MED.loadTemplate(tempsNames.temp_site_nav, domEl.div_recurrent_main_nav);
         MED.loadTemplate(tempsNames.temp_content_blog_ads_google_bing_yahoo, domEl.div_recurrent);
 
+        siteNavMethod.slickNav();
         matchMediaMethods.contentScrollarea();
         animatedMethods.animated();
         matchMediaMethods.gumbyInit();
+        slicknavMethods.add_slick_nav();
+        slicknavMethods.header_fixed();
     },
     unload: function(bindings) {
         MED.setHTML(domEl.div_recdiv_recurrent_main_navurren, '');
@@ -291,9 +331,12 @@ Finch.route('/web-analytics', {
         MED.loadTemplate(tempsNames.temp_site_nav, domEl.div_recurrent_main_nav);
         MED.loadTemplate(tempsNames.temp_content_blog_web_analytics, domEl.div_recurrent);
 
+        siteNavMethod.slickNav();
         matchMediaMethods.contentScrollarea();
         animatedMethods.animated();
         matchMediaMethods.gumbyInit();
+        slicknavMethods.add_slick_nav();
+        slicknavMethods.header_fixed();
     },
     unload: function(bindings) {
         MED.setHTML(domEl.div_recurrent_main_nav, '');

@@ -1,6 +1,6 @@
 /*
   In this file will be present most of the hard programming and performance of
-  The web application, here is the hard logic, handlers methods of the 
+  The web application, here is the hard logic, handlers methods of the
   DOM elements events.
   This section is used to declare global variables, with values used Throughout
   The system, especially those that keeps session variable values from php
@@ -46,7 +46,7 @@ function resetAlert () {
         buttonFocus   : "ok"
     });
  }
- 
+
 
 /* ------------------------------------------------------ *\
  [functions] 'Zone'
@@ -60,8 +60,8 @@ function resetAlert () {
 
 
 
-/*Make a group of methods for each url defined in room.js, in order to control the elements events, 
-  and the porformance of  each section. 
+/*Make a group of methods for each url defined in room.js, in order to control the elements events,
+  and the porformance of  each section.
   Depending on the complexity of the url, could be more than one group of methods.
   Could exist some group of general methods*/
 
@@ -269,7 +269,7 @@ var matchMediaMethods ={
     if (section === 'contact') {
       $("ul.site-nav li.change_contact").addClass('active');
       $("ul.site-nav li.change_blog").removeClass('active');
-    }   
+    }
   }
 }
 var siteNavMethod = {
@@ -281,7 +281,7 @@ var siteNavMethod = {
         duration: 600,
         closedSymbol: '&#155;',
         openedSymbol: '&#187;'
-      });    
+      });
   }
 }
 /* ------------------------------------------------------ *\
@@ -408,5 +408,32 @@ var clickActionsMethods = {
   },
   clickReturnServices : function (event) {
     Finch.navigate('/')
+  },
+  gumbyScrollArea : function() {
+    $('.content #scrollarea').animate({scrollTop: 0}, 750);
+  }
+}
+/* ------------------------------------------------------ *\
+ [Methods] MIBILE
+\* ------------------------------------------------------ */
+var slicknavMethods = {
+  add_slick_nav : function () {
+    if (matchMedia('only screen and (min-width: 320px)').matches) {
+      /*slicknav = {'id': 'content-menu-slicknav', 'class': 'slicknav_menu'}
+      MED.appendOne(domEl.div_recurrent_slick_nav, 'div', slicknav, '', 0);
+      MED.loadTemplate(tempsNames.temp_slicknav_button, '#content-menu-slicknav');
+      MED.loadTemplate(tempsNames.temp_slicknav_list, domEl.div_recurrent_role_menu);*/
+    }
+    if (matchMedia('only screen and (min-width: 1680px)').matches) {
+      //$('#content-menu-slicknav').remove();
+    }
+  },
+  header_fixed : function () {
+    if (matchMedia('only screen and (min-width: 320px)').matches) {
+      $('.top-main').addClass('fixed');
+    }
+    if (matchMedia('only screen and (min-width: 1680px)').matches) {
+      $('.top-main').removeClass('fixed');
+    }
   }
 }

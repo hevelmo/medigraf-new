@@ -13,8 +13,10 @@ domEl = {
 	"div_recurrent_main_nav":"div#content-main-nav",
 	"div_recurrent_planner_modal":"div#content-planner-modal",
 	"div_recurrent_portfolio":"div#content-portfolio",
+	"div_recurrent_role_menu":"#content-role-menu",
 	"div_recurrent_search_modal":"div#content-search-modal",
 	"div_recurrent_services":"div#content-services",
+	"div_recurrent_slick_nav":"#content-slick-nav",
 	"div_recurrent_video_modal":"div#content-video-modal",
 	"go_blog":"#go-blog",
 	"go_contact":"#go-contact",
@@ -66,6 +68,8 @@ tempsNames = {
 	"temp_section_service_icons":"temp_section_service_icons",
 	"temp_section_services":"temp_section_services",
 	"temp_site_nav":"temp_site_nav",
+	"temp_slicknav_button":"temp_slicknav_button",
+	"temp_slicknav_list":"temp_slicknav_list",
 	"temp_smooth_scroll_nav":"temp_smooth_scroll_nav"
 };
 urlsApi = {

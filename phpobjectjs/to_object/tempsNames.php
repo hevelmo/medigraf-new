@@ -2,6 +2,10 @@
 
 function tempsNames() {
     return array(
+        // SLICKNAV
+        'temp_slicknav_button' => 'temp_slicknav_button',
+        'temp_slicknav_list' => 'temp_slicknav_list',
+
         // TEMPS MAIN NAV
         'temp_smooth_scroll_nav' => 'temp_smooth_scroll_nav',
         'temp_has_child_nav' => 'temp_has_child_nav',
