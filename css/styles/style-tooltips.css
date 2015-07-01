@@ -1,0 +1,78 @@
+/* Tooltips */
+	a.ttp_tooltip[data-title]:before {
+		background: rgba(255,255,255,1);
+		content: attr(data-title);
+		/*display: none;*/
+		font-size: small;
+		opacity: 0;
+		overflow: hidden;
+		padding: 0px 10px;
+		border-radius: 2px;
+		box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+		position: absolute;
+		top: 160px;
+		z-index: 1000;
+	}
+	a.ttp_tooltip[data-title]:hover::before {
+		background: rgba(255,255,255,1);
+		content: attr(data-title);
+		/*display: block;*/
+		font-size: small;
+		opacity: 1;
+		overflow: visible;
+		padding: 0px 10px;
+		border-radius: 2px;
+		box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+		position: absolute;
+		top: 160px;
+		z-index: 1000;
+	}
+	a.ttp_tooltip.wa[data-title]::before,
+	a.ttp_tooltip.wa[data-title]:hover::before {
+		margin-left: -50px;
+	}
+	a.ttp_tooltip.blg[data-title]::before,
+	a.ttp_tooltip.blg[data-title]:hover::before {
+		margin-left: -20px;
+	}
+	a.ttp_tooltip.fo[data-title]::before,
+	a.ttp_tooltip.fo[data-title]:hover::before {
+		margin-left: -40px;
+	}
+	a.ttp_tooltip.pw[data-title]::before,
+	a.ttp_tooltip.pw[data-title]:hover::before {
+		margin-left: -75px;
+	}
+	a.ttp_tooltip.im[data-title]::before,
+	a.ttp_tooltip.im[data-title]:hover::before {
+		margin-left: -65px;
+	}
+	a.ttp_tooltip.agby[data-title]::before,
+	a.ttp_tooltip.agby[data-title]:hover::before {
+		margin-left: -85px;
+	}
+	a.ttp_tooltip.agby[data-title]::before,
+	a.ttp_tooltip.agby[data-title]:hover::before {
+		margin-left: -85px;
+	}
+	a.ttp_tooltip.proyectos[data-title]::before,
+	a.ttp_tooltip.proyectos[data-title]:hover::before {
+		margin-left: -40px;
+	}
+	a.ttp_tooltip.p_fussion[data-title]::before,
+	a.ttp_tooltip.p_fussion[data-title]:hover::before {
+		margin-left: -45px;
+	}
+	a.ttp_tooltip.p_jovy[data-title]::before,
+	a.ttp_tooltip.p_jovy[data-title]:hover::before {
+		margin-left: -38px;
+	}
+	a.ttp_tooltip.p_cavsa[data-title]::before,
+	a.ttp_tooltip.p_cavsa[data-title]:hover::before {
+		margin-left: -28px;
+	}
+	a.ttp_tooltip.p_okuma[data-title]::before,
+	a.ttp_tooltip.p_okuma[data-title]:hover::before {
+		margin-left: -53px;
+	}
+/* End Tooltips */

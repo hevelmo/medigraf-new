@@ -1,0 +1,44 @@
+/* ------------------------------------------------------------
+ * [STYLE]	BASE
+ * ------------------------------------------------------------ */
+body {
+	background:#424745;
+	color:#424745;
+	overflow: hidden;
+}
+
+@media only screen and (max-width : 769px) {
+
+body{
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+
+}
+
+.side-logo {
+width: 55px;
+display: block;
+position: absolute;
+bottom: 10px;
+margin: 0 auto;
+left: 0;
+right: 0;
+}
+
+.side-logo.inactive{
+opacity:0;
+}
+
+.mobile-logo{
+display:none;
+}
+
+::-moz-selection {
+	color:#fff;
+	text-shadow:none;
+}
+::selection {
+	color:#fff;
+	text-shadow:none;
+}

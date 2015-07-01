@@ -1,0 +1,44 @@
+/*Modals */
+
+.top-header .modal > .content{
+margin-left:auto;
+}
+.modal > .content{
+padding:0px 0px 20px;
+}
+.small.modal > .content{
+max-width:340px;
+}
+.medium.modal > .content{
+max-width:500px;
+}
+.big.modal > .content{
+max-width:780px;
+}
+.modal-header{
+padding:20px;
+}
+.modal-header{
+background:#e2e2e2;
+}
+.modal-header h4,.modal-header h5,.modal-header h6{
+font-weight:600;
+}
+.modal-header .close {
+position: absolute;
+top: 16px;
+right: 10px;
+cursor:pointer;
+}
+.medium .modal-header .close,.big .modal-header .close{
+top:20px;
+}
+.modal-body{
+padding:20px 0px;
+width:100%;
+}
+.modal-footer{
+text-align:right;
+padding:20px 20px;
+border-top:1px solid #e2e2e2;
+}

@@ -1,0 +1,57 @@
+/* ------------------------------------------------------------
+ * [STYLE]	FOOTER
+** ------------------------------------------------------------ */
+footer#colophon {
+	padding:15px 0px 15px;
+	background:#1F2020;
+	height:70px;
+}
+footer#colophon p {
+	color:#fff;
+	font-size:12px;
+	text-transform:uppercase;
+	padding-top:12px;
+}
+footer.widget-ftr {
+	background-color:#1c1c1c;
+}
+footer.widget-ftr>.content-block {
+	padding:75px 0px;
+}
+.widget-ftr h6.widget-heading {
+	padding-bottom:25px;
+	font-weight:700;
+	color:rgba(255, 255, 255, 0.5);
+}
+footer .widget-block a{
+	color:#fff;
+}
+footer .widget-block a.orig:hover{
+	text-decoration:underline;
+}
+footer .widget-block p, footer .widget-block ul li {
+	font-size:14px;
+}
+footer .widget-block .post-date {
+	display: block;
+	font-size: 12px;
+	color: rgba(255, 255, 255, 0.6);
+}
+footer .widget-block li {
+	border-bottom: 1px solid #2F2F2F;
+	margin-bottom: 8px;
+}
+footer .widget-block li:last-child {
+	border-bottom: 0px solid #2F2F2F;
+}
+.full-screen footer#colophon {
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	z-index: 500;
+}
+footer .field .input {
+	background: #424745;
+	color:#fff;
+}

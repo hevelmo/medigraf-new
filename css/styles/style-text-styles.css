@@ -1,0 +1,188 @@
+/* ------------------------------------------------------------
+ * [STYLE]	TEXT STYLES
+ * ------------------------------------------------------------ */
+p {
+	font-size:14px;
+}
+p.intro {
+	font-size:18px;
+}
+p span.first-letter {
+	display:block;
+	float:left;
+	font:normal 4em/1em 'Droid Serif',serif;
+	margin:0 10px 0 0;
+	overflow:hidden;
+}
+.droid-font {
+	font-family:'Droid Serif',serif;
+}
+.italic {
+	font-style:italic;
+}
+.grey-text {
+	color:#424745;
+}
+.dark .grey-text {
+	color:rgb(154,157,162);
+}
+.purple-text {
+	color:rgb(237,108,0) !important;
+}
+.white-text {
+	color:#fff;
+}
+.red-text {
+	color:#FF4F34 !important;
+}
+.blue-text {
+	color:#00A3FF !important;
+}
+.green-text {
+	color:#57DA00 !important;
+}
+span.purple,span.white,span.black,span.grey {
+	padding:2px 4px;
+}
+span.purple,span.black {
+	color:#fff;
+}
+h1,h2,h3,h4,h5,h6 {
+	color:#424745;
+}
+h5 {
+	padding-bottom:10px;
+}
+.dark h1,.dark h2,.dark h3,.dark h4,.dark h5,.dark h6 {
+	color:#fff;
+}
+.dark h1 a,.dark h2 a,.dark h3 a,.dark h4 a,.dark h5 a,.dark h6 a {
+	color:#aaa;
+}
+.dark {
+	color:rgba(255,255,255,0.8);
+}
+.block-heading {
+	font-size:60px;
+	font-weight:700;
+}
+.home-slider .block-heading {
+	padding-bottom:0px;
+}
+.block-heading.small {
+	font-size:1.375rem;
+	font-weight:700;
+	margin-bottom:4px;
+}
+.content-heading h3 {
+	font-weight:600;
+}
+.content-heading h6 {
+	font-weight:600;
+	letter-spacing:3px;
+	word-spacing:2px;
+}
+h6 {
+	font-size:14px;
+}
+.light {
+	font-weight:300 !important;
+}
+.s-bold {
+	font-weight:600 !important;
+}
+.bold {
+	font-weight:700 !important;
+}
+i.big {
+	font-size:48px;
+	width:100px;
+	height:100px;
+	text-align:center;
+	display:block;
+	padding-top:25px;
+	padding-left:5px;
+	border-radius:50%;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-ms-border-radius:50%;
+	-o-border-radius:50%;
+	margin:20px auto;
+	background:rgba(66,71,69,0.3);
+}
+.dark i.big {
+	color:rgba(255,255,255,0.8);
+	background:none;
+	border:1px solid #fff;
+}
+hr.thin {
+	display:block;
+	height:1px;
+	width:100%;
+	margin:25px auto 20px;
+	border:0px;
+}
+hr.grey {
+	background:#e0e0e0;
+}
+p {
+	font-size:14px;
+}
+p.intro {
+	font-size:18px;
+}
+.droid-font {
+	font-family:'Droid Serif',serif;
+}
+.italic {
+	font-style:italic;
+}
+.grey-text {
+	color:#424745 !important;
+}
+.dark .grey-text {
+	color:rgb(154,157,162) !important;
+}
+.white-text {
+	color:#fff !important;
+}
+.red-text {
+	color:#FF4F34 !important;
+}
+.blue-text {
+	color:#00A3FF !important;
+}
+.green-text {
+	color:#57DA00 !important;
+}
+span.purple,span.white,span.black,span.grey {
+	padding:2px 4px;
+}
+span.purple,span.black {
+	color:#fff;
+}
+blockquote {
+	border-left:5px solid rgb(237,108,0) !important;
+	background:#e9eede;
+	padding:16px 20px 16px;
+	font-style:italic;
+}
+.count {
+	display:block;
+	font-size:4.25rem;
+	font-weight:600;
+	padding:0px;
+	-webkit-transition-duration:0.3s;
+	-moz-transition-duration:0.3s;
+	-ms-transition-duration:0.3s;
+	-o-transition-duration:0.3s;
+	height:80px;
+	line-height:68px;
+	padding-bottom:14px;
+}
+.large-font {
+	font-size:128px;
+	line-height:120px;
+	padding-top:0px;
+	padding-bottom: .125em;
+}

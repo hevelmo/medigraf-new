@@ -1,0 +1,82 @@
+/* ========== PRIMARY COLOR SIMPLY CHANGE THIS VALUE TO YOUR COLOR ============*/
+a,
+p span.first-letter,
+.purple-text,
+.content-heading h6,
+i.big,
+.count,
+.main-nav ul.site-nav li.active a,.main-nav ul li:hover a,
+.main-nav ul.site-nav li a.toggle.active:after,
+footer .widget-block a.orig,
+footer .widget-block a:hover,
+#crumbs h6 a:hover,
+.drawer-title a:hover,
+.drawer-title a:hover:after,
+a.icon-button:hover,
+a.icon-button i,a.icon-button:before,a.icon-button:after,
+ul.nav-icon-list li a:hover,
+.chart span span,
+.icon,
+.member-icons i:hover,
+.member h2.member-name,
+.member-more-info .block-heading,
+.member-more-info a.close,
+.item:hover h1,
+.item:hover .stripe-view-link i,
+.item:hover .stripe-view-link,
+ul#filters li a:hover,ul#filters li a:hover i,.icon-nav li a:hover i,
+.grid.basic li:hover h1.grid-title,
+i.quote,
+.project-detail .quote-box h6.credit,
+.grid .post-info a.icon-button:hover,
+.grid.alt-posts li h1.grid-title:hover,.post-meta span span,
+.pagination li.current a,.pagination li.current:hover a,
+.block-slider-nav li.flex-active a,
+.block-slider-nav li a:hover,
+.method-detail h6,
+#sidebar .widget ul li a:hover,
+#options ul#filters li a.selected,
+.post-nav .icon-nav li a:hover,.post-nav .icon-nav li a:hover i,
+header.top-main .main-nav ul.site-nav li ul li a:hover,header.top-main .main-nav ul.site-nav li.active ul li a:hover,header.top-main .main-nav ul.site-nav li:hover ul li a:hover,
+.top-header nav.main-nav ul.site-nav li.active a,.top-header nav.main-nav ul.site-nav li:hover a,
+.top-header .site-nav li.active.has-child:after,.top-header .site-nav li.has-child:hover:after,
+span.cost,
+span.sym, span.decimal,
+.special span.cost:after{
+	color:rgb(237,108,0);
+}
+.icon {
+	color:rgb(255,255,255);
+}
+::-moz-selection{
+	background:rgb(237,108,0);
+}
+::selection{
+	background:rgb(237,108,0);
+}
+.icon-list li:hover i,
+ul.social-icon-list li:hover i,
+.icon-block:hover .icon:after,
+.item:hover h1 span,
+.grid.basic li:hover .project-info .project-index,
+.special span.cost{
+	background:rgb(66,71,69);
+}
+ul.project-meta li.link,
+.top-header nav.main-nav ul.site-nav li ul li.active a {
+	color:rgb(237,108,0) !important;
+}
+.top-header a#top-trigger:hover {
+	background:rgba(237,108,0,0.7);
+}
+.method-number{
+	color:rgba(237,108,0,0.2);
+}
+blockquote {
+	border-left:5px solid rgb(237,108,0) !important;
+}
+.special.prc-table{
+	border:5px solid rgb(237,108,0);
+}
+
+ul.scroll-nav li.smoothScroll a.current {color: rgba(237,108,0,0.2);}

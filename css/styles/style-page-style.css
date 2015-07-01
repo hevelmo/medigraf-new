@@ -1,0 +1,115 @@
+/* ------------------------------------------------------------
+ * [STYLE]	PAGE STYLES
+ * ------------------------------------------------------------ */
+ .stripe-bg {
+	background-image:url(../../img/stripe.png);
+}
+.grey {
+	background-color:#ebebeb;
+}
+.white {
+	background-color:#fff;
+}
+.black {
+	background-color:#424745;
+}
+.purple {
+	background-color:rgb(237,108,0);
+}
+.black-tint {
+	background:rgba(0,0,0,0.5);
+}
+.content {
+	position:relative;
+	margin-left:80px;
+	min-height:100%;
+	min-height:100vh;
+}
+
+.content.custom-scroll {
+	height:100%;
+}
+
+#scrollarea {
+overflow-x:hidden;
+	height:100%;
+}
+
+.two-third {
+	width:66.66%;
+	float:left;
+}
+.one-half {
+	float:left;
+	position:relative;
+	width:50%;
+	padding-bottom:0px;
+}
+.one-third {
+	width:33.3333%;
+	float:left;
+}
+.one-fourth {
+	width:25%;
+	float:left;
+}
+.content-block {
+	padding:100px 0px;
+}
+.content-block.small {
+	padding:75px 0px;
+}
+.content-block .content-block {
+	padding:50px 0px;
+}
+.img-section {
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:center center;
+	-webkit-transform:translate3d(0,0,0);
+	-moz-transform:translate3d(0,0,0);
+	-ms-transform:translate3d(0,0,0);
+	-o-transform:translate3d(0,0,0);
+}
+.action-block {
+	padding:50px 0px;
+}
+#intro>.black-tint {
+	height:100%;
+}
+.two-third .content-block {
+	padding:50px 80px;
+}
+.one-half>.content-block {
+	padding:100px 100px;
+	min-height:100%;
+}
+.content-block:before,.content-block:after {
+	content:'';
+	clear:both;
+}
+.row {
+	max-width:1170px;
+}
+.row.large {
+	max-width:98%;
+	max-width:1490px;
+}
+.dot-bg {
+	background-image:url(../pictures/dot.png);
+	background-attachment:fixed;
+}
+#map {
+	height:350px;
+}
+.one-third #map {
+	margin-bottom:-50px;
+}
+.page-header {
+	min-height:440px;
+}
+.page-header .black-tint {
+	min-height: 440px;
+}

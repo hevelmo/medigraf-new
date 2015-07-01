@@ -1,0 +1,8 @@
+/* Fonts */
+ @font-face {
+    font-family:"entypo";
+    font-style: normal;
+    font-weight: 400;
+    src: url(entypo-icons/icons/entypo.eot);
+    src: url("entypo-icons/icons/entypo.eot?#iefix") format("ie9-skip-eot"), url("entypo-icons/icons/entypo.woff") format("woff"), url("entypo-icons/icons/entypo.ttf") format("truetype");
+}

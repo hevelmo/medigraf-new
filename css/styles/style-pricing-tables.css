@@ -1,0 +1,123 @@
+/*pricing table */
+.prc-table{
+position:relative;
+border:2px solid rgba(66,71,69,0.2);
+}
+
+.prc-table:after{
+position:absolute;
+top:2px;
+right:2px;
+left:2px;
+bottom:2px;
+border:2px solid rgba(66,71,69,0.3);
+}
+.prc-table.special:after{
+border:4px solid #424745;
+}
+
+header.table-head{
+position:relative;
+z-index:5;
+}
+span.table-label{
+display:block;
+text-align:center;
+font-size:22px;
+font-weight:800;
+color:#424745;
+background:rgba(66,71,69,0.2);
+padding:20px 15px 15px;
+}
+.table-label span.table-info{
+display:block;
+font-size:14px;
+font-weight:400;
+line-height: 1.625em;
+padding:5px 15px 0px;
+color:#424745;
+}
+.table-price{
+text-align:center;
+margin:15px 0px;
+}
+span.cost{
+font-size: 70px;
+line-height: 46px;
+font-weight:600;
+width:180px;
+height:180px;
+padding-top:60px;
+margin:0 auto 30px;
+display:block;
+background:rgba(66,71,69,0.3);
+border-radius:50%;
+-webkit-border-radius:50%;
+-moz-border-radius:50%;
+-ms-border-radius:50%;
+-o-border-radius:50%;
+position:relative;
+box-shadow: 4px 4px #fff;
+-webkit-box-shadow: 4px 4px #fff;
+-moz-box-shadow: 4px 4px #fff;
+-ms-box-shadow: 4px 4px #fff;
+-o-box-shadow: 4px 4px #fff;
+}
+span.cost:after {
+content: "\f0d7";
+font-family: fontawesome;
+display: block;
+position: absolute;
+bottom: -26px;
+width: 100%;
+font-size: 50px;
+text-align: center;
+left: -0px;
+color: rgba(66,71,69,0.3);
+z-index: 2;
+text-shadow: 4px 6px #fff;
+-webkit-text-shadow: 4px 6px #fff;
+-moz-text-shadow: 4px 6px #fff;
+-ms-text-shadow: 4px 6px #fff;
+-o-text-shadow: 4px 6px #fff;
+}
+span.cost .dur{
+font-size: 13px;
+font-weight: 400;
+display:block;
+color:#424745;
+font-style:italic;
+}
+span.sym, span.decimal {
+font-size:32px;
+vertical-align: top;
+}
+.table-body{
+padding:0px 6px 20px;
+text-align:center;
+}
+.table-body ul{
+font-size:14px;
+line-height: 1.625em;
+font-weight:400;
+}
+.table-body ul li{
+padding:15px 15px;
+border-bottom:1px solid rgba(66,71,69,0.2);
+}
+.special span.table-label{
+padding-top:17px;
+background:#d5d5d5;
+}
+.special span.cost{
+color: #fff;
+}
+.special span.sym, .special span.decimal{
+color:#fff;
+}
+.special span.cost .dur{
+color:#fff;
+}
+.special .table-body{
+padding-bottom:17px;
+}

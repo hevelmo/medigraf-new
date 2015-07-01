@@ -1,0 +1,16 @@
+/* Mobile */
+ em {
+    font-style: italic;
+    line-height: inherit;
+}
+strong {
+    font-weight: 700;
+    line-height: inherit;
+}
+small {
+    font-size: 56.4%;
+    line-height: inherit;
+}
+h1 small, h2 small, h3 small, h4 small, h5 small {
+    color: #777;
+}

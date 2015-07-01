@@ -1,0 +1,25 @@
+#scrollTo-home,
+#scrollTo-view-projects,
+#scrollTo-view-services,
+#return-home,
+#go-porfolio,
+#return-index-logo,
+#return-home-services,
+#go-blog,
+#go-contact,
+#view_blog_posicionamiento_web,
+#view_blog_fotografia,
+#view_blog_identidad_de_marca,
+#view_blog_ads_google_bing_yahoo,
+#view_blog_web_analytics,
+#go-privacy-notice,
+#go-legal-notice,
+#go-view-project-fussion,
+#go-view-project-cavsa,
+#go-view-project-okuma,
+#go-view-project-jovyCandy,
+#go-view-projects {
+	cursor: pointer;
+}
+.hiding { opacity: 0; }
+.visible { opacity: 1; }
