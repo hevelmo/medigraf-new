@@ -5,6 +5,13 @@
 */
 
 $(document).ready(function() {
+    // cache container
+    var $container = $('.grid.filter');
+    // initialize isotope
+    $container.isotope();
+    $container.isotope('reLayout');
+    var $optionSets = $('#options .option-set'),
+        $optionLinks = $optionSets.find('a');
 
 
     /* ------------------------------------------------------ *\
@@ -77,14 +84,14 @@ $(document).ready(function() {
     });
     // CLICK NAV SCROLL TO PORTOFOLIO -> porfolio
     $(domEl.div_recurrent_main_nav).on(Gumby.click, domEl.scrollTo_view_projects, function(){
-        $('.content #scrollarea').animate({scrollTop: 890}, 750);
-        $(domEl.scrollTo_view_projects).addClass('current');
-        $(domEl.scrollTo_home).removeClass('current');
-        $(domEl.scrollTo_view_services).removeClass('current');
+            $('.content #scrollarea').animate({scrollTop: 960}, 750);
+            $(domEl.scrollTo_view_projects).addClass('current');
+            $(domEl.scrollTo_home).removeClass('current');
+            $(domEl.scrollTo_view_services).removeClass('current');
     });
     // CLICK NAV SCROLL TO SERVICES -> services
     $(domEl.div_recurrent_main_nav).on(Gumby.click, domEl.scrollTo_view_services, function(){
-        $('.content #scrollarea').animate({scrollTop: 1600}, 750);
+        $('.content #scrollarea').animate({scrollTop: 1880}, 750);
         $(domEl.scrollTo_view_services).addClass('current');
         $(domEl.scrollTo_home).removeClass('current');
         $(domEl.scrollTo_view_projects).removeClass('current');
@@ -97,7 +104,7 @@ $(document).ready(function() {
     // CLICK NAV GOBACK SERVICES
     $(domEl.div_recurrent_main_nav).on('click', domEl.return_home_services, clickActionsMethods.clickReturnServices);
     $(domEl.div_recurrent_main_nav).on(Gumby.click, domEl.return_home_services, function(){
-        $('.content #scrollarea').animate({scrollTop: 1600}, 750);
+        $('.content #scrollarea').animate({scrollTop: 1880}, 750);
         $(domEl.scrollTo_view_services).addClass('current');
         $(domEl.scrollTo_home).removeClass('current');
     });
@@ -124,6 +131,11 @@ $(document).ready(function() {
     $(domEl.div_recurrent).on('click', domEl.go_porfolio, clickActionsMethods.clickGoPortfolio);
     $(domEl.div_recurrent).on(Gumby.click, domEl.go_porfolio, clickActionsMethods.gumbyScrollArea);
 
+    /*// CLICK BY FILTERS
+    $(domEl.div_recurrent).on('click', '#filters a', filtersMethods.clickFilter);
+    $optionLinks.on('click', filtersMethods.optionSet);
+    $(domEl.div_recurrent).on('click', "#filters-2 a#go-section-filter-agencies-news", filtersMethods.clickReturnFilter);*/
+
     // CLICK GO PROJECT FUSSION JEANS
     $(domEl.div_recurrent_main_nav).on('click', domEl.view_project_fussion, clickActionsMethods.clickGoFussionJeans);
     $(domEl.div_recurrent_main_nav).on(Gumby.click, domEl.view_project_fussion, clickActionsMethods.gumbyScrollArea);
@@ -143,10 +155,28 @@ $(document).ready(function() {
     $(domEl.div_recurrent).on(Gumby.click, domEl.view_project_okuma, clickActionsMethods.gumbyScrollArea);
 
     // CLICK GO PROJECT JOVY CANDY
-    $(domEl.div_recurrent_main_nav).on('click', domEl.view_project_jovyCandy, clickActionsMethods.clickGoJovyCandy);
-    $(domEl.div_recurrent_main_nav).on(Gumby.click, domEl.view_project_jovyCandy, clickActionsMethods.gumbyScrollArea);
-    $(domEl.div_recurrent).on('click', domEl.view_project_jovyCandy, clickActionsMethods.clickGoJovyCandy);
-    $(domEl.div_recurrent).on(Gumby.click, domEl.view_project_jovyCandy, clickActionsMethods.gumbyScrollArea);
+    $(domEl.div_recurrent_main_nav).on('click', domEl.view_project_jovy_candy, clickActionsMethods.clickGoJovyCandy);
+    $(domEl.div_recurrent_main_nav).on(Gumby.click, domEl.view_project_jovy_candy, clickActionsMethods.gumbyScrollArea);
+    $(domEl.div_recurrent).on('click', domEl.view_project_jovy_candy, clickActionsMethods.clickGoJovyCandy);
+    $(domEl.div_recurrent).on(Gumby.click, domEl.view_project_jovy_candy, clickActionsMethods.gumbyScrollArea);
+
+    // CLICK GO PROJECT PREMIUM BY JLR
+    $(domEl.div_recurrent_main_nav).on('click', domEl.view_project_premium_by_jlr, clickActionsMethods.clickGoPremiumByJLR);
+    $(domEl.div_recurrent_main_nav).on(Gumby.click, domEl.view_project_premium_by_jlr, clickActionsMethods.gumbyScrollArea);
+    $(domEl.div_recurrent).on('click', domEl.view_project_premium_by_jlr, clickActionsMethods.clickGoPremiumByJLR);
+    $(domEl.div_recurrent).on(Gumby.click, domEl.view_project_premium_by_jlr, clickActionsMethods.gumbyScrollArea);
+
+    // CLICK GO PROJECT LAND ROVER GDL
+    $(domEl.div_recurrent_main_nav).on('click', domEl.view_project_landrover_gdl, clickActionsMethods.clickGoLandroverGDL);
+    $(domEl.div_recurrent_main_nav).on(Gumby.click, domEl.view_project_landrover_gdl, clickActionsMethods.gumbyScrollArea);
+    $(domEl.div_recurrent).on('click', domEl.view_project_landrover_gdl, clickActionsMethods.clickGoLandroverGDL);
+    $(domEl.div_recurrent).on(Gumby.click, domEl.view_project_landrover_gdl, clickActionsMethods.gumbyScrollArea);
+
+    // CLICK GO PROJECT JAGUAR GDL
+    $(domEl.div_recurrent_main_nav).on('click', domEl.view_project_jaguar_gdl, clickActionsMethods.clickGoJaguarGDL);
+    $(domEl.div_recurrent_main_nav).on(Gumby.click, domEl.view_project_jaguar_gdl, clickActionsMethods.gumbyScrollArea);
+    $(domEl.div_recurrent).on('click', domEl.view_project_jaguar_gdl, clickActionsMethods.clickGoJaguarGDL);
+    $(domEl.div_recurrent).on(Gumby.click, domEl.view_project_jaguar_gdl, clickActionsMethods.gumbyScrollArea);
 
     // CLICK GO SERVICES
     $(domEl.div_recurrent).on('click', domEl.view_blog_posicionamiento_web, clickActionsMethods.clickGoWebPosition);

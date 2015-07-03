@@ -343,6 +343,36 @@ var filtersMethods = {
           });
     }
 }
+/* ------------------------------------------------------ *\
+ [Methods] Filters Agencies News
+\* ------------------------------------------------------ */
+    /*var filtersMethods = {
+        optionSet : function (event) {
+            var $this = $(this);
+            // don't proceed if already selected
+            if ( $this.hasClass('selected') ) {
+              return false;
+            }
+            var $optionSet = $this.parents('.option-set');
+            $optionSet.find('.selected').removeClass('selected');
+            $this.addClass('selected');
+        },
+        clickFilter : function (event) {
+            var $container = $('.grid.filter');
+            // filter items when filter link is clicked
+            var selector = $(this).attr('data-filter');
+            $container.isotope({ filter: selector });
+            return false;
+        },
+        clickReturnFilter : function (event) {
+            var $container = $('.grid.filter');
+            // filter items when filter link is clicked
+            var selector = $(this).attr('data-filter');
+            $container.isotope({ filter: selector });
+            Finch.navigate('/agencias/nuevos');
+            return false;
+        }
+    }*/
 
 /* ------------------------------------------------------ *\
  [Methods] inputVal
@@ -369,6 +399,15 @@ var clickActionsMethods = {
   },
   clickGoPortfolio : function (event) {
     Finch.navigate('/proyectos');
+  },
+  clickGoPremiumByJLR : function (event) {
+    Finch.navigate('/premium-by-jlr');
+  },
+  clickGoLandroverGDL : function (event) {
+    Finch.navigate('/landrover-gdl');
+  },
+  clickGoJaguarGDL : function (event) {
+    Finch.navigate('/jaguar-gdl');
   },
   clickGoFussionJeans : function (event) {
     Finch.navigate('/fussion-jeans');
@@ -434,6 +473,84 @@ var slicknavMethods = {
     }
     if (matchMedia('only screen and (min-width: 1680px)').matches) {
       $('.top-main').removeClass('fixed');
+    }
+  }
+}
+var switch_section_portfolio = {
+  section_porfolio : function () {
+    switch (section) {
+      case 'fussion_jeans':
+        $('.project-fussion').addClass('active');
+        $('.project-cavsa').removeClass('active');
+        $('.project-okuma').removeClass('active');
+        $('.project-jovy-candy').removeClass('active');
+        $('.project-premium-by-jlr').removeClass('active');
+        $('.project-jaguar-gdl').removeClass('active');
+        $('.project-landrover-gdl').removeClass('active');
+      break;
+      case 'ford_cavsa':
+        $('.project-fussion').removeClass('active');
+        $('.project-cavsa').addClass('active');
+        $('.project-okuma').removeClass('active');
+        $('.project-jovy-candy').removeClass('active');
+        $('.project-premium-by-jlr').removeClass('active');
+        $('.project-jaguar-gdl').removeClass('active');
+        $('.project-landrover-gdl').removeClass('active');
+      break;
+      case 'okuma_sushi':
+        $('.project-fussion').removeClass('active');
+        $('.project-cavsa').removeClass('active');
+        $('.project-okuma').addClass('active');
+        $('.project-jovy-candy').removeClass('active');
+        $('.project-premium-by-jlr').removeClass('active');
+        $('.project-jaguar-gdl').removeClass('active');
+        $('.project-landrover-gdl').removeClass('active');
+      break;
+      case 'jovy_candy':
+        $('.project-fussion').removeClass('active');
+        $('.project-cavsa').removeClass('active');
+        $('.project-okuma').removeClass('active');
+        $('.project-jovy-candy').addClass('active');
+        $('.project-premium-by-jlr').removeClass('active');
+        $('.project-jaguar-gdl').removeClass('active');
+        $('.project-landrover-gdl').removeClass('active');
+      break;
+      case 'premium_by_jlr':
+        $('.project-fussion').removeClass('active');
+        $('.project-cavsa').removeClass('active');
+        $('.project-okuma').removeClass('active');
+        $('.project-jovy-candy').removeClass('active');
+        $('.project-premium-by-jlr').addClass('active');
+        $('.project-jaguar-gdl').removeClass('active');
+        $('.project-landrover-gdl').removeClass('active');
+      break;
+      case 'landrover_gdl':
+        $('.project-fussion').removeClass('active');
+        $('.project-cavsa').removeClass('active');
+        $('.project-okuma').removeClass('active');
+        $('.project-jovy-candy').removeClass('active');
+        $('.project-premium-by-jlr').removeClass('active');
+        $('.project-landrover-gdl').addClass('active');
+        $('.project-jaguar-gdl').removeClass('active');
+      break;
+      case 'jaguar_gdl':
+        $('.project-fussion').removeClass('active');
+        $('.project-cavsa').removeClass('active');
+        $('.project-okuma').removeClass('active');
+        $('.project-jovy-candy').removeClass('active');
+        $('.project-premium-by-jlr').removeClass('active');
+        $('.project-landrover-gdl').removeClass('active');
+        $('.project-jaguar-gdl').addClass('active');
+      break;
+      default:
+        $('.project-fussion').removeClass('active');
+        $('.project-cavsa').removeClass('active');
+        $('.project-okuma').removeClass('active');
+        $('.project-jovy-candy').removeClass('active');
+        $('.project-premium-by-jlr').removeClass('active');
+        $('.project-landrover-gdl').removeClass('active');
+        $('.project-jaguar-gdl').removeClass('active');
+      break;
     }
   }
 }

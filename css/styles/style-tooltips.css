@@ -1,8 +1,8 @@
-/* Tooltips */
+/* Tooltips Vo.1 */
+	/*
 	a.ttp_tooltip[data-title]:before {
 		background: rgba(255,255,255,1);
 		content: attr(data-title);
-		/*display: none;*/
 		font-size: small;
 		opacity: 0;
 		overflow: hidden;
@@ -16,7 +16,6 @@
 	a.ttp_tooltip[data-title]:hover::before {
 		background: rgba(255,255,255,1);
 		content: attr(data-title);
-		/*display: block;*/
 		font-size: small;
 		opacity: 1;
 		overflow: visible;
@@ -75,4 +74,82 @@
 	a.ttp_tooltip.p_okuma[data-title]:hover::before {
 		margin-left: -53px;
 	}
+	*/
 /* End Tooltips */
+/* BEGIN TOOLTIP V0.2 */
+.ttp_tooltip, [data-title] {
+	position: relative;
+	display: inline-block;
+}
+.ttp_tooltip:before, .ttp_tooltip:after, [data-title]:before, [data-title]:after {
+	position: absolute;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000000;
+    pointer-events: none;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    transition: 0.3s ease;
+    -webkit-transition-delay: 0ms;
+    -moz-transition-delay: 0ms;
+    transition-delay: 0ms;
+}
+.ttp_tooltip:hover:before,
+.ttp_tooltip:hover:after,
+.ttp_tooltip:focus:before,
+.ttp_tooltip:focus:after,
+[data-title]:hover:before,
+[data-title]:hover:after,
+[data-title]:focus:before,
+[data-title]:focus:after {
+	visibility: visible;
+	opacity: 1;
+}
+.ttp_tooltip:hover:before,
+.ttp_tooltip:hover:after,
+[data-title]:hover:before,
+[data-title]:hover:after {
+	-webkit-transition-delay: 100ms;
+	-moz-transition-delay: 100ms;
+	transition-delay: 100ms;
+}
+.ttp_tooltip:before, [data-title]:before {
+	content: '';
+	position: absolute;
+	background: transparent;
+	border: 6px solid transparent;
+	z-index: 1000001;
+}
+.ttp_tooltip:after, [data-title]:after {
+	content: attr(data-title);
+	background: #ffffff;
+	box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+	color: rgb(237,108,0);
+	padding: 8px 10px;
+	font-size: 12px;
+	line-height: 12px;
+	white-space: nowrap;
+}
+.ttp_tooltip--bottom:before {
+	border-bottom-color: #ffffff;
+}
+
+.ttp_tooltip--bottom:before {
+	margin-top: -12px;
+}
+.ttp_tooltip--bottom:after {
+	margin-left: -20px;
+}
+.ttp_tooltip--bottom:before, .ttp_tooltip--bottom:after {
+	top: 100%;
+	left: 0%;
+}
+.ttp_tooltip--bottom:hover:after, .ttp_tooltip--bottom:hover:before, .ttp_tooltip--bottom:focus:after, .ttp_tooltip--bottom:focus:before {
+-webkit-transform: translateY(22px);
+-moz-transform: translateY(22px);
+	transform: translateY(22px);
+}
+/* END TOOLTIP V0.2 */

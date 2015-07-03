@@ -16,7 +16,7 @@ Finch.route('/', {
         MED.loadTemplate(tempsNames.temp_section_services, domEl.div_recurrent_services);
         MED.loadTemplate(tempsNames.temp_section_service_icons, domEl.div_recurrent_begin_services);
 
-        siteNavMethod.slickNav();
+        //siteNavMethod.slickNav();
         matchMediaMethods.gumbyInit();
         matchMediaMethods.contentScrollarea();
         animatedMethods.animated();
@@ -33,13 +33,14 @@ Finch.route('/', {
 Finch.route('/contacto', {
     setup: function(bindings) {
         section = 'contact';
+        ga('send', 'pageview', '/contacto');
     },
     load: function(bindings) {
         MED.loadTemplate(tempsNames.temp_site_nav, domEl.div_recurrent_main_nav);
 
         MED.loadTemplate(tempsNames.temp_content_contact, domEl.div_recurrent);
 
-        siteNavMethod.slickNav();
+        //siteNavMethod.slickNav();
         matchMediaMethods.contentScrollarea();
         animatedMethods.animated();
         matchMediaMethods.gumbyInit();
@@ -56,6 +57,7 @@ Finch.route('/contacto', {
 Finch.route('/aviso-de-privacidad', {
     setup: function(bindings) {
         section = 'privacy_notice';
+        ga('send', 'pageview', '/aviso-de-privacidad');
     },
     load: function(bindings) {
         MED.loadTemplate(tempsNames.temp_site_nav, domEl.div_recurrent_main_nav);
@@ -78,6 +80,7 @@ Finch.route('/aviso-de-privacidad', {
 Finch.route('/aviso-legal', {
     setup: function(bindings) {
         section = 'legal_notice';
+        ga('send', 'pageview', '/aviso-legal');
     },
     load: function(bindings) {
         MED.loadTemplate(tempsNames.temp_site_nav, domEl.div_recurrent_main_nav);
@@ -100,6 +103,7 @@ Finch.route('/aviso-legal', {
 Finch.route('/proyectos', {
     setup: function(bindings) {
         section = 'projects';
+        ga('send', 'pageview', '/proyectos');
     },
     load: function(bindings) {
         MED.loadTemplate(tempsNames.temp_has_child_nav, domEl.div_recurrent_main_nav);
@@ -110,11 +114,12 @@ Finch.route('/proyectos', {
 
         siteNavMethod.slickNav();
         matchMediaMethods.contentScrollarea();
-        filtersMethods.changeFilters();
         animatedMethods.animated();
         matchMediaMethods.gumbyInit();
         slicknavMethods.add_slick_nav();
         slicknavMethods.header_fixed();
+        filtersMethods.changeFilters();
+        switch_section_portfolio.section_porfolio();
     },
     unload: function(bindings) {
         MED.setHTML(domEl.div_recurrent_main_nav, '');
@@ -126,6 +131,7 @@ Finch.route('/proyectos', {
 Finch.route('/fussion-jeans', {
     setup: function(bindings) {
         section = 'fussion_jeans';
+        ga('send', 'pageview', '/fussion-jeans');
     },
     load: function(bindings) {
         MED.loadTemplate(tempsNames.temp_has_child_nav, domEl.div_recurrent_main_nav);
@@ -138,6 +144,7 @@ Finch.route('/fussion-jeans', {
         matchMediaMethods.gumbyInit();
         slicknavMethods.add_slick_nav();
         slicknavMethods.header_fixed();
+        switch_section_portfolio.section_porfolio();
     },
     unload: function(bindings) {
         MED.setHTML(domEl.div_recurrent_main_nav, '');
@@ -149,6 +156,7 @@ Finch.route('/fussion-jeans', {
 Finch.route('/ford-cavsa', {
     setup: function(bindings) {
         section = 'ford_cavsa';
+        ga('send', 'pageview', '/ford-cavsa');
     },
     load: function(bindings) {
         MED.loadTemplate(tempsNames.temp_has_child_nav, domEl.div_recurrent_main_nav);
@@ -161,6 +169,7 @@ Finch.route('/ford-cavsa', {
         matchMediaMethods.gumbyInit();
         slicknavMethods.add_slick_nav();
         slicknavMethods.header_fixed();
+        switch_section_portfolio.section_porfolio();
     },
     unload: function(bindings) {
         MED.setHTML(domEl.div_recurrent_main_nav, '');
@@ -172,6 +181,7 @@ Finch.route('/ford-cavsa', {
 Finch.route('/okuma-sushi', {
     setup: function(bindings) {
         section = 'okuma_sushi';
+        ga('send', 'pageview', '/okuma-sushi');
     },
     load: function(bindings) {
         MED.loadTemplate(tempsNames.temp_has_child_nav, domEl.div_recurrent_main_nav);
@@ -184,6 +194,7 @@ Finch.route('/okuma-sushi', {
         matchMediaMethods.gumbyInit();
         slicknavMethods.add_slick_nav();
         slicknavMethods.header_fixed();
+        switch_section_portfolio.section_porfolio();
     },
     unload: function(bindings) {
         MED.setHTML(domEl.div_recurrent_main_nav, '');
@@ -195,6 +206,7 @@ Finch.route('/okuma-sushi', {
 Finch.route('/jovy-candy', {
     setup: function(bindings) {
         section = 'jovy_candy';
+        ga('send', 'pageview', '/jovy-candy');
     },
     load: function(bindings) {
         MED.loadTemplate(tempsNames.temp_has_child_nav, domEl.div_recurrent_main_nav);
@@ -207,6 +219,82 @@ Finch.route('/jovy-candy', {
         matchMediaMethods.gumbyInit();
         slicknavMethods.add_slick_nav();
         slicknavMethods.header_fixed();
+        switch_section_portfolio.section_porfolio();
+    },
+    unload: function(bindings) {
+        MED.setHTML(domEl.div_recurrent_main_nav, '');
+        MED.setHTML(domEl.slicknav_menu, '');
+        MED.setHTML(domEl.div_recurren, '');
+    }
+});
+
+Finch.route('/premium-by-jlr', {
+    setup: function(bindings) {
+        section = 'premium_by_jlr';
+        ga('send', 'pageview', '/premium-by-jlr');
+    },
+    load: function(bindings) {
+        MED.loadTemplate(tempsNames.temp_has_child_nav, domEl.div_recurrent_main_nav);
+
+        MED.loadTemplate(tempsNames.temp_content_project_premium_by_jlr, domEl.div_recurrent);
+
+        siteNavMethod.slickNav();
+        matchMediaMethods.contentScrollarea();
+        animatedMethods.animated();
+        matchMediaMethods.gumbyInit();
+        slicknavMethods.add_slick_nav();
+        slicknavMethods.header_fixed();
+        switch_section_portfolio.section_porfolio();
+    },
+    unload: function(bindings) {
+        MED.setHTML(domEl.div_recurrent_main_nav, '');
+        MED.setHTML(domEl.slicknav_menu, '');
+        MED.setHTML(domEl.div_recurren, '');
+    }
+});
+
+Finch.route('/landrover-gdl', {
+    setup: function(bindings) {
+        section = 'landrover_gdl';
+        ga('send', 'pageview', '/landrover-gdl');
+    },
+    load: function(bindings) {
+        MED.loadTemplate(tempsNames.temp_has_child_nav, domEl.div_recurrent_main_nav);
+
+        MED.loadTemplate(tempsNames.temp_content_project_landrover_gdl, domEl.div_recurrent);
+
+        siteNavMethod.slickNav();
+        matchMediaMethods.contentScrollarea();
+        animatedMethods.animated();
+        matchMediaMethods.gumbyInit();
+        slicknavMethods.add_slick_nav();
+        slicknavMethods.header_fixed();
+        switch_section_portfolio.section_porfolio();
+    },
+    unload: function(bindings) {
+        MED.setHTML(domEl.div_recurrent_main_nav, '');
+        MED.setHTML(domEl.slicknav_menu, '');
+        MED.setHTML(domEl.div_recurren, '');
+    }
+});
+
+Finch.route('/jaguar-gdl', {
+    setup: function(bindings) {
+        section = 'jaguar_gdl';
+        ga('send', 'pageview', '/jaguar-gdl');
+    },
+    load: function(bindings) {
+        MED.loadTemplate(tempsNames.temp_has_child_nav, domEl.div_recurrent_main_nav);
+
+        MED.loadTemplate(tempsNames.temp_content_project_jaguar_gdl, domEl.div_recurrent);
+
+        siteNavMethod.slickNav();
+        matchMediaMethods.contentScrollarea();
+        animatedMethods.animated();
+        matchMediaMethods.gumbyInit();
+        slicknavMethods.add_slick_nav();
+        slicknavMethods.header_fixed();
+        switch_section_portfolio.section_porfolio();
     },
     unload: function(bindings) {
         MED.setHTML(domEl.div_recurrent_main_nav, '');
@@ -218,6 +306,7 @@ Finch.route('/jovy-candy', {
 Finch.route('/blog', {
     setup: function(bindings) {
         section = 'blog';
+        ga('send', 'pageview', '/blog');
     },
     load: function(bindings) {
         MED.loadTemplate(tempsNames.temp_site_nav, domEl.div_recurrent_main_nav);
@@ -242,6 +331,7 @@ Finch.route('/blog', {
 Finch.route('/posicionamiento-web', {
     setup: function(bindings) {
         section = 'web_position';
+        ga('send', 'pageview', '/posicionamiento-web');
     },
     load: function(bindings) {
         MED.loadTemplate(tempsNames.temp_site_nav, domEl.div_recurrent_main_nav);
@@ -263,6 +353,7 @@ Finch.route('/posicionamiento-web', {
 Finch.route('/fotografia', {
     setup: function(bindings) {
         section = 'photography';
+        ga('send', 'pageview', '/fotografia');
     },
     load: function(bindings) {
         MED.loadTemplate(tempsNames.temp_site_nav, domEl.div_recurrent_main_nav);
@@ -284,6 +375,7 @@ Finch.route('/fotografia', {
 Finch.route('/identidad-de-marca', {
     setup: function(bindings) {
         section = 'brand_identities';
+        ga('send', 'pageview', '/identidad-de-marca');
     },
     load: function(bindings) {
         MED.loadTemplate(tempsNames.temp_site_nav, domEl.div_recurrent_main_nav);
@@ -305,6 +397,7 @@ Finch.route('/identidad-de-marca', {
 Finch.route('/ads-google-bing-yahoo', {
     setup: function(bindings) {
         section = 'ads';
+        ga('send', 'pageview', '/ads-google-bing-yahoo');
     },
     load: function(bindings) {
         MED.loadTemplate(tempsNames.temp_site_nav, domEl.div_recurrent_main_nav);
@@ -326,6 +419,7 @@ Finch.route('/ads-google-bing-yahoo', {
 Finch.route('/web-analytics', {
     setup: function(bindings) {
         section = 'web_analytics';
+        ga('send', 'pageview', '/web-analytics');
     },
     load: function(bindings) {
         MED.loadTemplate(tempsNames.temp_site_nav, domEl.div_recurrent_main_nav);

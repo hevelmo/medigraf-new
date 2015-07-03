@@ -32,10 +32,13 @@ function tempsNames() {
     	'temp_content_notes' => 'temp_content_notes',
 
     	// PORTFOLIO -> PROJECTS
-    	'temp_content_project_fussion_jeans' => 'temp_content_project_fussion_jeans',
-    	'temp_content_project_ford_cavsa' => 'temp_content_project_ford_cavsa',
-    	'temp_content_project_okuma_sushi' => 'temp_content_project_okuma_sushi',
-    	'temp_content_project_jovy_candy' => 'temp_content_project_jovy_candy',
+        'temp_content_project_premium_by_jlr' => 'temp_content_project_premium_by_jlr',
+        'temp_content_project_landrover_gdl' => 'temp_content_project_landrover_gdl',
+        'temp_content_project_jaguar_gdl' => 'temp_content_project_jaguar_gdl',
+        'temp_content_project_fussion_jeans' => 'temp_content_project_fussion_jeans',
+        'temp_content_project_ford_cavsa' => 'temp_content_project_ford_cavsa',
+        'temp_content_project_okuma_sushi' => 'temp_content_project_okuma_sushi',
+        'temp_content_project_jovy_candy' => 'temp_content_project_jovy_candy',
 
     	// BLOG -> SERVICES
     	'temp_content_blog_posicionamiento_web' => 'temp_content_blog_posicionamiento_web',

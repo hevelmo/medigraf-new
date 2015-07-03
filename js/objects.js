@@ -38,8 +38,11 @@ domEl = {
 	"view_blog_web_analytics":"#view_blog_web_analytics",
 	"view_project_cavsa":"#go-view-project-cavsa",
 	"view_project_fussion":"#go-view-project-fussion",
-	"view_project_jovyCandy":"#go-view-project-jovyCandy",
+	"view_project_jaguar_gdl":"#go-view-project-jaguar-gdl",
+	"view_project_jovy_candy":"#go-view-project-jovy-candy",
+	"view_project_landrover_gdl":"#go-view-project-landrover-gdl",
 	"view_project_okuma":"#go-view-project-okuma",
+	"view_project_premium_by_jlr":"#go-view-project-premium-by-jlr",
 	"view_projects":"#go-view-projects"
 };
 tempsNames = {
@@ -57,8 +60,11 @@ tempsNames = {
 	"temp_content_privacy_notice":"temp_content_privacy_notice",
 	"temp_content_project_ford_cavsa":"temp_content_project_ford_cavsa",
 	"temp_content_project_fussion_jeans":"temp_content_project_fussion_jeans",
+	"temp_content_project_jaguar_gdl":"temp_content_project_jaguar_gdl",
 	"temp_content_project_jovy_candy":"temp_content_project_jovy_candy",
+	"temp_content_project_landrover_gdl":"temp_content_project_landrover_gdl",
 	"temp_content_project_okuma_sushi":"temp_content_project_okuma_sushi",
+	"temp_content_project_premium_by_jlr":"temp_content_project_premium_by_jlr",
 	"temp_has_child_nav":"temp_has_child_nav",
 	"temp_section_filters_by_projects":"temp_section_filters_by_projects",
 	"temp_section_grid_filter_projects":"temp_section_grid_filter_projects",

@@ -28,10 +28,13 @@ function domEl() {
         'go_blog' => '#go-blog',
         'go_contact' => '#go-contact',
         // VIEW PROJECTS
+        'view_project_premium_by_jlr' => '#go-view-project-premium-by-jlr',
+        'view_project_landrover_gdl' => '#go-view-project-landrover-gdl',
+        'view_project_jaguar_gdl' => '#go-view-project-jaguar-gdl',
         'view_project_fussion' => '#go-view-project-fussion',
         'view_project_cavsa' => '#go-view-project-cavsa',
         'view_project_okuma' => '#go-view-project-okuma',
-        'view_project_jovyCandy' => '#go-view-project-jovyCandy',
+        'view_project_jovy_candy' => '#go-view-project-jovy-candy',
 
         'return_home_logo' => '#return-index-logo',
         'return_home' => '#return-home',
